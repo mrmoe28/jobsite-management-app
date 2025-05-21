@@ -20,7 +20,9 @@
   },
   "github": {
     "autoAlias": true,
-    "autoJobCancelation": true
+    "autoJobCancelation": true,
+    "silent": false,
+    "enabled": true
   },
   "env": {
     "PRODUCTION_MODE": "true"
@@ -29,6 +31,14 @@
     "api/**/*.js": {
       "memory": 1024,
       "maxDuration": 10
+    }
+  },
+  "trailingSlash": false,
+  "public": true,
+  "regions": ["iad1"],
+  "build": {
+    "env": {
+      "ENABLE_EXPERIMENTAL_COREPACK": "1"
     }
   }
 }
