@@ -22,7 +22,13 @@
     "autoAlias": true,
     "autoJobCancelation": true,
     "silent": false,
-    "enabled": true
+    "enabled": true,
+    "deploymentStatus": {
+      "enabled": true
+    },
+    "repositoryDispatch": {
+      "enabled": true
+    }
   },
   "env": {
     "PRODUCTION_MODE": "true"
