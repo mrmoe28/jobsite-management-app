@@ -8,5 +8,18 @@
     { "source": "/api/(.*)", "destination": "/api/$1" },
     { "source": "/(.*)", "destination": "/index.html" }
   ],
-  "cleanUrls": true
+  "cleanUrls": true,
+  "git": {
+    "deploymentEnabled": {
+      "main": true,
+      "production": true,
+      "staging": true,
+      "dev-*": false,
+      "test-*": false
+    }
+  },
+  "github": {
+    "autoAlias": true,
+    "autoJobCancelation": true
+  }
 }
